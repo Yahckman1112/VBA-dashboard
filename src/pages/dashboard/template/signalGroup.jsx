@@ -48,7 +48,7 @@ function SignalGroup(props) {
               </div>
               <div className={styles.user_data}>{item.data}</div>
             </li>
-            <span className={styles.line}></span>
+            <div className={styles.line}></div>
           </>
         ))}
       </ul>

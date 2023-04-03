@@ -9,6 +9,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  text-transform: capitalize;
 }
 
 .btn {
@@ -35,6 +36,26 @@
 }
 
 .para3 {
-  @extend .para1
-
+  @extend .para1;
+  //   border-bottom: 1px solide red !important;
 }
+
+.line {
+  border-top: 1px solid #2c2c2c;
+  width: 100% !important;
+}
+
+.email {
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  border-top: 1px solid #2c2c2c;
+
+
+  &_text{
+    padding: 20px;
+  }
+  }
+
+
