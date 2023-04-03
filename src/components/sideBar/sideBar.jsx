@@ -17,7 +17,7 @@ function SideBar(props) {
                 <li
                   style={{
                     color: active == index && "#00B6FF",
-                    borderLeft: active == index && "3px solid #00B6FF",
+                    borderLeft: active == index && "1px solid #00B6FF",
                   }}
                   onClick={() => setActive(index)}
                   key={index}

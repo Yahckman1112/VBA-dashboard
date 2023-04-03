@@ -40,6 +40,11 @@
 }
 .link{
     color: #FFFFFF66;
+    text-decoration: none;
+
+    &:hover{
+      color: #FFFFFF66;
+    }
 
 }
 .icon {
