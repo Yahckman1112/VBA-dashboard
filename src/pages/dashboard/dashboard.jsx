@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./dashboard.module.scss";
 import WalletTable from "./walletTable";
 import SignalGroup from "./template/signalGroup";
+import PrivateGroup from "./template/privateGroup";
+import Membership from "./template/membership";
 function Dashboard(props) {
   return (
     <div className={styles.dash}>
@@ -18,23 +20,32 @@ function Dashboard(props) {
         </div>
       </div>
       <div className={styles.signalGroup}>
-        <p className={styles.para} ></p>
-        <div className={styles.signalGroup_para}>
-
-        <p className={styles.signalGroup_para_1}>
-
-        </p>
+        <p className={styles.signalGroup_title}> Signal Group</p>
+        <div className={styles.signalGroup_link}>
+          <p className={styles.signalGroup_link1}>
+            <span className={styles.link1_main}>Group You Manage</span>
+            <span className={styles.link1_sub}>Other Signal Group</span>
+          </p>
+          <p>
+            {" "}
+            <a href="#" className={styles.link2}>
+              {" "}
+              Create New Signal Group
+            </a>
+          </p>
         </div>
 
-      <div className={`  row`}>
-        
-        <div className="col-12 col-lg-4">
-          < SignalGroup/>
+        <div className={`  row`}>
+          <div className="col-12 col-lg-4">
+            <SignalGroup />
+          </div>
+          <div className="col-12 col-lg-4">
+            <PrivateGroup />
+          </div>
+          <div className="col-12 col-lg-4">
+            <Membership />
+          </div>
         </div>
-        <div className="col-12 col-lg-4">2</div>
-        <div className="col-12 col-lg-4">3</div>
-      </div>
-
       </div>
     </div>
   );

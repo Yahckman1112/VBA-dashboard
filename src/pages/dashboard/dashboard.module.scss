@@ -74,8 +74,46 @@ th {
 
 .signalGroup {
   background: #32393c33;
-//   margin: 10px;
+  //   margin: 10px;
   margin-top: 10px;
   border-radius: 10px;
   padding: 10px;
+
+  &_title {
+    font-family: Noto Sans Bengali UI;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  &_link {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: Noto Sans Bengali UI;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    // margin-top: 20px;
+  }
 }
+
+.link1_main {
+
+  height: 43px;
+  width: 158px;
+  border-radius: 10px;
+  padding: 12px;
+  background: #ffffff14;
+  margin-right: 10px;
+}
+
+
+.link2 {
+ 
+    text-decoration: none !important;
+
+
+}
+

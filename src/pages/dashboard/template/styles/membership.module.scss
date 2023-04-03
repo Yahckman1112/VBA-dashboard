@@ -1,0 +1,40 @@
+@import "./privateGroup.module.scss";
+
+.membership {
+  @extend .private;
+}
+
+.para1 {
+  //styleName: H6 web;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.btn {
+  @extend .btn;
+}
+
+.para2 {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffffcc;
+  margin-top: 15px;
+
+  &_sub {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #ffffff;
+  }
+}
+
+.para3 {
+  @extend .para1
+
+}

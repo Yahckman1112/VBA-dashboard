@@ -39,6 +39,7 @@
 
 .App{
   background-color:  #201F1F;
+  /* text-decoration: none; */
 }
 .body{
   display: flex;
