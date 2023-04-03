@@ -45,7 +45,7 @@ function SideBar(props) {
           </ul>
         </div>
         <div>
-          <ul className={styles.sideBar_list}>
+          <ul >
             <li className={styles.sideBar_row}>
               <div className={styles.icon}>
                 <MdDarkMode />

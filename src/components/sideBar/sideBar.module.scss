@@ -12,9 +12,13 @@
   font-weight: 600;
   line-height: 21px;
 
-  &_list {
+
+
+&_list {
     height: auto;
     width: 100%;
+    border-bottom: 1px solid  #2C2C2C;
+;
     // background-color: orangered;
   }
 

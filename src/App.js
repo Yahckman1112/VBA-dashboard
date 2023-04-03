@@ -1,20 +1,23 @@
 import NavBar from "./components/navBar/navBar";
 import { Route, Routes } from "react-router-dom";
-import Dashboard from './pages/dashboard/dashboard';
+import Dashboard from "./pages/dashboard/dashboard";
 import SideBar from "./components/sideBar/sideBar";
-
-
+import './App.css'
 function App() {
   return (
-    <div>
+    <div className="App">
       <NavBar />
 
-    <SideBar/>
+      <div className="body">
+      <SideBar />
+
       <Routes>
-      <Route path="/" element={< Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
       </Routes>
 
-    {/* </SideBar> */}
+      </div>
+
+      {/* </SideBar> */}
     </div>
   );
 }

@@ -1,0 +1,81 @@
+.dash {
+  background: #131313;
+  // height: 87vhpx;
+  width: 1146px;
+  margin: 10px;
+  border-radius: 0px;
+  color: white;
+  padding: 15px;
+}
+
+.chart {
+  height: 277px;
+
+  left: 24px;
+  top: 24px;
+  border-radius: 10px;
+  background: #32393c33;
+  padding: 5px;
+
+  &_para1 {
+    font-family: Noto Sans Bengali UI;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.walletTable {
+  background-color: #32393c33;
+  height: 100%;
+  left: 492px;
+  top: 24px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.tableContainer {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 20px;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #2e333533;
+  }
+}
+
+td {
+  font-family: Noto Sans Bengali UI;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  border-top: 1px solid #2c2c2c !important;
+}
+
+th {
+  font-family: Noto Sans Bengali UI;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+// signal
+
+.signalGroup {
+  background: #32393c33;
+//   margin: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
