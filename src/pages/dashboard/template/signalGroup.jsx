@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles/signalGroup.module.scss";
 
 import img from "./../../../images/abc.png";
@@ -35,10 +35,12 @@ function SignalGroup(props) {
       data: "Req Group",
     },
   ];
+
   return (
     <div className={styles.sGroup}>
       <p className={styles.signal_para1}>Signal Groups You Belong To</p>
       <div className={styles.line}></div>
+
       {signalData.map((item, i) => (
         <>
           <div className={styles.user}>

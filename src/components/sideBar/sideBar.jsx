@@ -38,6 +38,8 @@ function SideBar(props) {
               <Link
                 style={{
                   color: bots == index && "#00B6FF",
+  
+
                 }}
                 className={styles.link}
                 to={item.link}

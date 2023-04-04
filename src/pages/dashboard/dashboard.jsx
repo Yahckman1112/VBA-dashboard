@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./dashboard.module.scss";
 import WalletTable from "./walletTable";
 import SignalGroup from "./template/signalGroup";
@@ -6,6 +6,11 @@ import PrivateGroup from "./template/privateGroup";
 import Membership from "./template/membership";
 import Chart from "./template/chart";
 function Dashboard(props) {
+  const [activateButton, setActiveButton] = useState(1);
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+  };
   return (
     <div className={styles.dash}>
       <div className="row">
@@ -26,10 +31,28 @@ function Dashboard(props) {
       </div>
       <div className={styles.signalGroup}>
         <p className={styles.signalGroup_title}> Signal Group</p>
+
         <div className={styles.signalGroup_link}>
           <p className={styles.signalGroup_link1}>
-            <span className={styles.link1_main}>Group You Manage</span>
-            <span className={styles.link1_sub}>Other Signal Group</span>
+            <span
+              className={`button ${
+                activateButton === 1 ? styles.link1_main : ""
+              } `}
+              onClick={() => handleButtonClick(1)}
+              style={{marginRight:'10px', cursor:'pointer' }}
+            >
+              Group You Manage
+            </span>
+            <span
+              className={`button ${
+                activateButton === 2 ? styles.link1_main : ""
+              }` }
+              onClick={() => handleButtonClick(2)}
+              style={{cursor:'pointer' }}
+
+            >
+              Other Signal Group
+            </span>
           </p>
           <p>
             {" "}

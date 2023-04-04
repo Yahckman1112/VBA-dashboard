@@ -1,7 +1,5 @@
-@import "./../../index.scss";
-
 .sideBar {
-  //   display: flex;
+
   height: 87vh;
   width: 230px;
   border-radius: 0px;
@@ -12,12 +10,10 @@
   font-weight: 600;
   line-height: 21px;
 
-
-
-&_list {
+  &_list {
     height: auto;
     width: 100%;
-    border-bottom: 1px solid  #2C2C2C;
+    border-bottom: 1px solid #2c2c2c;
   }
 
   &_row {
@@ -36,14 +32,13 @@
     }
   }
 }
-.link{
-    color: #FFFFFF66;
-    text-decoration: none;
+.link {
+  color: #ffffff66;
+  text-decoration: none;
 
-    &:hover{
-      color: #FFFFFF66;
-    }
-
+  &:hover {
+    color: #ffffff66;
+  }
 }
 .icon {
   flex: 30%;
