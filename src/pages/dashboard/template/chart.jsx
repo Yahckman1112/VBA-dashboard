@@ -7,7 +7,7 @@ function Chart(props) {
     { x: "USDT ", y: 36.77 },
     { x: "others", y: 36.77 },
     { x: "BTC", y: 36.77 },
-    // { x: " ", y: 3 },
+    
   ];
 
   const dataColor = ["#FF8B00", "#0019F8", "#D00BF0", "#00B6FF", "white"];
@@ -24,22 +24,20 @@ function Chart(props) {
             //   labels: { fill: "white", fontSize: 12, fontWeight: "bold" },
             // }}
             
-            height={290}
+            height={300}
         data={data}
         labels={({ datum }) => `${datum.x}: ${datum.y}%`}
-        innerRadius={70}
-        labelRadius={90}
+        innerRadius={80}
+        labelRadius={100}
         colorScale={dataColor}
         style={{
           labels: { fill: "white", fontSize: 12, fontWeight: "bold" }
         }}
       >
-      {/* <text className={styles.pieText} x={150} y={150} textAnchor="middle" dominantBaseline="middle">
-        Your Text Here
-      </text>
-      fhjksbsf */}
+      
         <text x={'50%'} y={'50%'} textAnchor="middle" dominantBaseline="middle" style={{color:'blue'}} className={styles.pieText}>
-    dvdhvd
+    <p>$5000</p>
+    <p>Total Balance</p>
   </text>
       </VictoryPie>
     </div>
