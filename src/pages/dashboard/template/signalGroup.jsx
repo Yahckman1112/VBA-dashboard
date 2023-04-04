@@ -43,7 +43,7 @@ function SignalGroup(props) {
 
       {signalData.map((item, i) => (
         <>
-          <div className={styles.user}>
+          <div className={styles.user} key={i} >
             <div className={styles.user_img}>
               <img src={item.img} alt="" />
             </div>

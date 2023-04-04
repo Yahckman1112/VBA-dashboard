@@ -39,10 +39,10 @@ function Membership(props) {
 
       {emails.map((item, index) => (
         <>
-        <div className={styles.line}></div>
-        <div className={styles.email} key={index}>
-          <p className={styles.email_text}>{item.email}</p>
-        </div>
+          <div className={styles.line}></div>
+          <div className={styles.email}>
+            <p className={styles.email_text} key={index}>{item.email}</p>
+          </div>
         </>
       ))}
     </div>

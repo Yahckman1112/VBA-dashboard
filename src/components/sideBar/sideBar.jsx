@@ -3,6 +3,7 @@ import styles from "./sideBar.module.scss";
 import { sideBarMiddle, sideBarTop } from "../../utils/sideBarData";
 import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Theme from "../../pages/dashboard/template/themes";
 function SideBar(props) {
   const [active, setActive] = useState([0]);
   const [bots, setBots] = useState([0]);
@@ -13,7 +14,7 @@ function SideBar(props) {
         <div className={styles.sibeBar_data}>
           <ul className={styles.sideBar_list}>
             {sideBarTop.map((item, index) => (
-              <Link className={styles.link} to={item.link}>
+              <Link className={styles.link} to={item.link} key={index}>
                 {" "}
                 <li
                   style={{
@@ -21,7 +22,7 @@ function SideBar(props) {
                     borderLeft: active == index && "1px solid #00B6FF",
                   }}
                   onClick={() => setActive(index)}
-                  key={index}
+                  
                   className={styles.sideBar_row}
                 >
                   <div className={styles.icon}>{item.icon}</div>
@@ -36,10 +37,9 @@ function SideBar(props) {
           <ul className={styles.sideBar_list}>
             {sideBarMiddle.map((item, index) => (
               <Link
+              key={index}
                 style={{
                   color: bots == index && "#00B6FF",
-  
-
                 }}
                 className={styles.link}
                 to={item.link}
@@ -55,14 +55,14 @@ function SideBar(props) {
           </ul>
         </div>
         <div>
-          <ul>
-            <li className={styles.sideBar_row}>
-              <div className={styles.icon}>
-                <MdDarkMode />
+         
+            
+              <div className={styles.theme}>
+                <Theme />
+           
               </div>
-              <div className={styles.title}>Dark</div>
-            </li>
-          </ul>
+          
+        
         </div>
       </div>
     </div>
