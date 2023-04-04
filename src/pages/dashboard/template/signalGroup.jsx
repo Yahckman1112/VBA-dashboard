@@ -37,21 +37,19 @@ function SignalGroup(props) {
   ];
   return (
     <div className={styles.sGroup}>
-      {/* <p>ghjkl</p> */}
-      <ul className={styles.signal}>
-        <p className={styles.sidnal_para1}>Signal Groups You Belong To</p>
-        {signalData.map((item, index) => (
-          <>
-            <li className={styles.user}>
-              <div className={styles.user_img}>
-                <img src={item.img} alt="Signal Image" />
-              </div>
-              <div className={styles.user_data}>{item.data}</div>
-            </li>
-            <div className={styles.line}></div>
-          </>
-        ))}
-      </ul>
+      <p className={styles.signal_para1}>Signal Groups You Belong To</p>
+      <div className={styles.line}></div>
+      {signalData.map((item, i) => (
+        <>
+          <div className={styles.user}>
+            <div className={styles.user_img}>
+              <img src={item.img} alt="" />
+            </div>
+            <div className={styles.user_ame}>{item.data} </div>
+          </div>
+          <div className={styles.line}></div>
+        </>
+      ))}
     </div>
   );
 }

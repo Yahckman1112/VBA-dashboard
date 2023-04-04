@@ -1,6 +1,6 @@
 .dash {
   background: #131313;
-  // height: 87vhpx;
+ 
   width: 1146px;
   margin: 10px;
   border-radius: 0px;
@@ -9,7 +9,7 @@
 }
 
 .chart {
-  height: 277px;
+  height: auto;
 
   left: 24px;
   top: 24px;
@@ -21,10 +21,17 @@
     font-family: Noto Sans Bengali UI;
     font-size: 18px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+    // line-height: 24px;
+   
   }
+}
+.chart1{
+  display: grid;
+  place-items: center;
+  margin-top: -30px;
+  // background-color: #cc9090;
+  // width: auto;
+  // height: auto;
 }
 
 .walletTable {

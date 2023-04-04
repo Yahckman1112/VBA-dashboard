@@ -4,6 +4,7 @@ import WalletTable from "./walletTable";
 import SignalGroup from "./template/signalGroup";
 import PrivateGroup from "./template/privateGroup";
 import Membership from "./template/membership";
+import Chart from "./template/chart";
 function Dashboard(props) {
   return (
     <div className={styles.dash}>
@@ -11,6 +12,10 @@ function Dashboard(props) {
         <div className="col-12 col-lg-5">
           <div className={styles.chart}>
             <p className={styles.chart_para1}> My wallet</p>
+
+            <div className={styles.chart1}>
+              <Chart />
+            </div>
           </div>
         </div>
         <div className="col-12 col-lg-7">

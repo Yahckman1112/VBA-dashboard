@@ -3,6 +3,7 @@
 
 .sGroup {
   @extend .private;
+  padding: 0px !important;
 }
 
 .signal {
@@ -14,8 +15,8 @@
       border-bottom: 1px solid #2c2c2c;
     }
 .user {
- padding-top: 10px;
- padding-bottom: 10px;
+ padding-top: 20px;
+ padding-bottom: 20px;
   width: 100%;
   height: 60px;
   list-style-type: none;
@@ -24,24 +25,31 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  padding: 10px;
 
   &_img {
-    flex: 20%;
-    display: grid;
-    place-items: center;
+    // flex: 20%;
+    // display: grid;
+    // place-items: center;
+
+    margin-right: 20px;
   }
 
-  &_data {
-    flex: 80%;
+  // &_data {
+  //   flex: 80%;
 
-    font-weight: 600;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
+  //   font-weight: 600;
+  //   line-height: 21px;
+  //   letter-spacing: 0em;
+  //   text-align: left;
+  // }
 }
 .signal_para1 {
   font-weight: 400;
   line-height: 21px;
-  border-bottom: 1px solid #2c2c2c;
+  // border-bottom: 1px solid #2c2c2c;
+  padding-bottom: 10px;
+  padding: 10px;
 }
+
+
