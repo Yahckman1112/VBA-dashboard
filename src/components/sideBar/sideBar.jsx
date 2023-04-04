@@ -5,6 +5,7 @@ import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 function SideBar(props) {
   const [active, setActive] = useState([0]);
+  const [bots, setBots] = useState([0]);
 
   return (
     <div>
@@ -34,7 +35,14 @@ function SideBar(props) {
         <div className={styles.sibeBar_data}>
           <ul className={styles.sideBar_list}>
             {sideBarMiddle.map((item, index) => (
-              <Link className={styles.link} to={item.link}>
+              <Link
+                style={{
+                  color: bots == index && "#00B6FF",
+                }}
+                className={styles.link}
+                to={item.link}
+                onClick={() => setBots(index)}
+              >
                 {" "}
                 <li key={index} className={styles.sideBar_row}>
                   <div className={styles.icon}>{item.icon}</div>
@@ -45,7 +53,7 @@ function SideBar(props) {
           </ul>
         </div>
         <div>
-          <ul >
+          <ul>
             <li className={styles.sideBar_row}>
               <div className={styles.icon}>
                 <MdDarkMode />

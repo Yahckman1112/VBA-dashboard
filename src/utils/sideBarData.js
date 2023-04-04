@@ -10,25 +10,25 @@ import { GiRobotHelmet } from "react-icons/gi";
 
 export const sideBarTop = [
   {
-    id:1,
+ 
     title: "Dashboard",
     icon: <MdDashboard />,
     link: "/",
   },
   {
-    id:2,
+    
     title: "Analytics",
     icon: <MdOutlineAnalytics />,
     link: "/",
   },
   {
-    id:3,
+
     title: "Position",
     icon: <MdStackedBarChart />,
     link: "/",
   },
   {
-    id:4,
+   
     title: "Notification",
     icon: <MdNotificationsNone />,
     link: "/",
@@ -37,13 +37,13 @@ export const sideBarTop = [
 
 export const sideBarMiddle = [
   {
-    id:5,
+
     title: "Bots",
     icon: <GiRobotHelmet />,
     link: "/",
   },
   {
-    id:6,
+
     title: "Signal",
     icon: <RiSignalTowerFill />,
     link: "/",
@@ -51,10 +51,3 @@ export const sideBarMiddle = [
 ];
 
 
-export const sideBarBottom = [
-  {
-    title: "Dashboard",
-    icon: <MdDarkMode />,
-    link: "/",
-  },
-];
