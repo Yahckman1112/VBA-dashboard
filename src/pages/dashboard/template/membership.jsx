@@ -36,11 +36,14 @@ function Membership(props) {
       </div>
 
       <p className={styles.para3}>Active member emails</p>
-      {/* <div className={styles.line}> </div> */}
+
       {emails.map((item, index) => (
+        <>
+        <div className={styles.line}></div>
         <div className={styles.email} key={index}>
           <p className={styles.email_text}>{item.email}</p>
         </div>
+        </>
       ))}
     </div>
   );
